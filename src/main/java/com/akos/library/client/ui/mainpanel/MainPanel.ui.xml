@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+                           xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+<ui:style>
+    .important {
+        font-weight: bold;
+    }
+</ui:style>
+<g:VerticalPanel>
+    <g:Label ui:field="jsonRequestUrlLabel"/>
+    <g:Label ui:field="serverResponse"/>
+    <g:Label ui:field="errorMsgLabel"/>
+</g:VerticalPanel>
+</ui:UiBinder>
