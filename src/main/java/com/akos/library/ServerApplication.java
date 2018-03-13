@@ -1,7 +1,6 @@
 package com.akos.library;
 
-
-import com.akos.library.server.OracleConfiguration;
+import com.akos.library.server.DatabaseConfiguration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,15 +10,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 
-import java.sql.Date;
-import java.util.Calendar;
-import java.util.HashSet;
-import java.util.Set;
-
 @Configuration
 @EnableAutoConfiguration
-@ImportResource("classpath:persistenceContext.xml")
-@Import(OracleConfiguration.class)
+//@Import(DatabaseConfiguration.class)
 @ComponentScan("com.akos.library")
 public class ServerApplication {
 
